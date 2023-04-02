@@ -2,7 +2,9 @@ package com.taifead.studentservice.service;
 
 import com.taifead.studentservice.model.Ranking;
 import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UniRankingServiceImpl implements UniRankingService {
     @Override
     public Page<Ranking> getRankings(Integer pageSize, Integer currentPage) {
